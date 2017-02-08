@@ -1,0 +1,16 @@
+----Refactoring code----
+
+the version 2 of the code, the modular code, took significantly more time to refactor in terms of changing things over to
+2d arrays, because of the many interactions that the code has with the global arrays, there were many different function headers and return types
+that needed to be changed as well as the functions that referenced these arrays. (part of the problem was also my own inexperience in working with
+multi-dimensional arrays in C).
+
+The change to making the space toroidal or wrapping was a significant challenge for the old code, it required many if-else cases in order to get it to
+work without rewriting it completely, the modular code only took a few simple changes to make the wrapping space work.
+
+overall i spend about equal amounts of time refactoring both sets of code, the modular code was mostly spend on switching to 2d arrays
+and the ugly set of code time was mostly spend on changing over to the wrapping code. with more experience the modular code would have been overall easier
+to update.
+
+one of the big challenges with the modular code is the significantly increased size of the codebase, once one understands both sets of code to the
+same level, the modular code has the disadvantage to having more code to possibly change even if the changes are easier and less coupled
