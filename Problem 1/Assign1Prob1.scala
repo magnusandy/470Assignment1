@@ -3,12 +3,16 @@
   * amm215
   * 1114088
   * Assignment 1 - Problem 1
+  *
+  * SEE OUTPUT AT THE BOTTOM
   */
 
 
 import scala.math._
 
 object Assign1Prob1 {
+
+  //1. is in main, see output at bottom
 
   //2a
   /**
@@ -58,6 +62,7 @@ object Assign1Prob1 {
   def myAppendFilteredAndSorted2(v:Vector[String], str:String, t :Integer): Vector[String] = {
     myAppend(v, t, str).filter(_ contains str).sorted
   }
+  //4a see output and main
 
   //4b
   /**
@@ -69,13 +74,14 @@ object Assign1Prob1 {
 
 
   //4d
-
   //Calculates the Root mean square of the given vector of doubles
   def RMSFromMean(waveform: Vector[Double]):Double ={
     val n = waveform.length
     val average = (waveform.reduce(_+_)/n)
     sqrt((waveform.map(_-average).map(pow(_,2)).reduce(_+_))/n)
   }
+
+  //4e see output and main
 
 
 
@@ -135,6 +141,7 @@ object Assign1Prob1 {
     val Waveform = sampleTimes.map(waveformFunc(_))
     println("Waveform = ")
     println(Waveform)
+
     //4d is the definition of RMSFromMean above
     //4e
     println("4e")
