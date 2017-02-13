@@ -3,11 +3,13 @@
   * amm215
   * 1114088
   * Assignment 1 - Problem 3
+  *
+  * SEE OUTPUT AT BOTTOM
   */
 
 
 
-object Assign1Problem3 {
+object Problem3 {
 
   //PROBLEM 3 A
   /***
@@ -25,7 +27,7 @@ object Assign1Problem3 {
 
   //PROBLEM 3 B
 
-  //iterative calculation of if a numer is prime
+  //iterative and slow calculation of if a number is prime
   //returns true if Long l is prime, false if the l is not a prime
   def isPrime(l: Long): Boolean = {
     if (l <= 3) {

@@ -10,7 +10,7 @@
 
 import scala.math._
 
-object Assign1Prob1 {
+object Problem1 {
 
   //1. is in main, see output at bottom
 
